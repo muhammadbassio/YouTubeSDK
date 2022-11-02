@@ -1,0 +1,14 @@
+{
+  "pins" : [
+    {
+      "identity" : "fly",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/muhammadbassio/Fly",
+      "state" : {
+        "revision" : "78d1be6f06039a93b2d85655c81d6a6f0ff21e35",
+        "version" : "0.0.1"
+      }
+    }
+  ],
+  "version" : 2
+}

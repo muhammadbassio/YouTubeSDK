@@ -9,7 +9,6 @@ import Foundation
 import Fly
 
 open class YouTubeAPIManager: APIManager {
-	public static let shared: YouTubeAPIManager = YouTubeAPIManager(id: "", key: "")
 	
 	public var maxResults: Int = 20
 	private(set) public var bundleId = ""

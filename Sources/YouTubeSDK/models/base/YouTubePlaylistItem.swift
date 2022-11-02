@@ -7,13 +7,13 @@
 
 import Foundation
 
-struct YouTubePlaylistItem: Codable {
+public struct YouTubePlaylistItem: Codable {
 	var id: String?
 	var snippet: YouTubeSnippet?
 	var contentDetails: YouTubePlaylistItemContentDetails?
 }
 
-struct YouTubePlaylistItemContentDetails: Codable {
+public struct YouTubePlaylistItemContentDetails: Codable {
 	var videoId: String?
 	var startAt: String?
 	var endAt: String?

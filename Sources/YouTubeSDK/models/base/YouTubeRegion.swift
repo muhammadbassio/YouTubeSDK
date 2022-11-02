@@ -7,12 +7,12 @@
 
 import Foundation
 
-struct YouTubeRegion: Codable {
+public struct YouTubeRegion: Codable {
 	var id: String?
 	var snippet: YouTubeSnippet?
 }
 
-struct YouTubeRegionSnippet: Codable {
+public struct YouTubeRegionSnippet: Codable {
 	var gl: String?
 	var name: String?
 }

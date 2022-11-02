@@ -7,12 +7,12 @@
 
 import Foundation
 
-struct YouTubeLanguage: Codable {
+public struct YouTubeLanguage: Codable {
 	var id: String?
 	var snippet: YouTubeLanguageSnippet?
 }
 
-struct YouTubeLanguageSnippet: Codable {
+public struct YouTubeLanguageSnippet: Codable {
 	var hl: String?
 	var name: String?
 }

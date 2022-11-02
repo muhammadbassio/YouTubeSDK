@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct YouTubeVideoContentDetails: Codable {
+public struct YouTubeVideoContentDetails: Codable {
 	var duration: String?
 	var dimension: String?
 	var definition: String?
@@ -19,7 +19,7 @@ struct YouTubeVideoContentDetails: Codable {
 	var hasCustomThumbnail: Bool?
 }
 
-struct YouTubeVideo: Codable {
+public struct YouTubeVideo: Codable {
 	var id: String?
 	var snippet: YouTubeSnippet?
 	var contentDetails: YouTubeVideoContentDetails?

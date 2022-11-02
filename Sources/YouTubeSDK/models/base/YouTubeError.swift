@@ -7,14 +7,14 @@
 
 import Foundation
 
-struct YouTubeError: Codable {
+public struct YouTubeError: Codable {
   var code: Int?
   var message: String?
   var status: String?
   var errors: [YouTubeErrorInfo]?
 }
 
-struct YouTubeErrorInfo: Codable {
+public struct YouTubeErrorInfo: Codable {
   var message: String?
   var domain: String?
   var reason: String?

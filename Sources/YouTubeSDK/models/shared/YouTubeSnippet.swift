@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct YouTubeSnippet: Codable {
+public struct YouTubeSnippet: Codable {
 	var publishedAt: String?
 	var channelId: String?
 	var title: String?

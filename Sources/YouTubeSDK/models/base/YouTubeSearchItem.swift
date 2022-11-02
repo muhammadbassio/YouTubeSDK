@@ -7,12 +7,12 @@
 
 import Foundation
 
-struct YouTubeSearchItem: Codable {
+public struct YouTubeSearchItem: Codable {
   var id: YouTubeResourceId?
 	var snippet: YouTubeSearchItemSnippet?
 }
 
-struct YouTubeSearchItemSnippet: Codable {
+public struct YouTubeSearchItemSnippet: Codable {
 	var channelId: String?
 	var title: String?
 	var thumbnails: YouTubeItemThumbnails?

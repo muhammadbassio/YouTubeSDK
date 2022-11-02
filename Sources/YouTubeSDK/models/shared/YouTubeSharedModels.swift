@@ -12,17 +12,17 @@ public struct PageInfo: Codable {
 	var resultsPerPage: Int?
 }
 
-struct YouTubeRegionRestriction: Codable {
+public struct YouTubeRegionRestriction: Codable {
 	var allowed: [String]?
 	var blocked: [String]?
 }
 
-struct YouTubeLocalization: Codable {
+public struct YouTubeLocalization: Codable {
 	var title: String?
 	var description: String?
 }
 
-struct YouTubeItemThumbnails: Codable {
+public struct YouTubeItemThumbnails: Codable {
 	var `default`: YouTubeItemThumbnail?
 	var medium: YouTubeItemThumbnail?
 	var high: YouTubeItemThumbnail?
@@ -30,13 +30,13 @@ struct YouTubeItemThumbnails: Codable {
 	var maxres: YouTubeItemThumbnail?
 }
 
-struct YouTubeItemThumbnail: Codable {
+public struct YouTubeItemThumbnail: Codable {
 	var url: String?
 	var width: UInt?
 	var height: UInt?
 }
 
-struct YouTubeResourceId: Codable {
+public struct YouTubeResourceId: Codable {
 	var videoId: String?
 	var channelId: String?
 	var playlistId: String?

@@ -7,12 +7,12 @@
 
 import Foundation
 
-struct YouTubePlaylist: Codable {
+public struct YouTubePlaylist: Codable {
 	var id: String?
 	var snippet: YouTubeSnippet?
 	var contentDetails: YouTubePlaylistContentDetails?
 }
 
-struct YouTubePlaylistContentDetails: Codable {
+public struct YouTubePlaylistContentDetails: Codable {
 	var itemCount: UInt?
 }

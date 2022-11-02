@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct YouTubeVideoCategory: Codable {
+public struct YouTubeVideoCategory: Codable {
 	var id: Int?
 	var snippet: YouTubeSnippet?
 }

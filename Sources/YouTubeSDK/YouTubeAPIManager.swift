@@ -8,7 +8,7 @@
 import Foundation
 import Fly
 
-class YouTubeAPIManager: APIManager {
+open class YouTubeAPIManager: APIManager {
 	public static let shared: YouTubeAPIManager = YouTubeAPIManager(id: "", key: "")
 	
 	var maxResults: Int = 20
@@ -21,7 +21,7 @@ class YouTubeAPIManager: APIManager {
 		super.init(manager: manager)
 	}
 	
-	class func createNetworkManager() -> NetworkManager {
+	public class func createNetworkManager() -> NetworkManager {
 		let config = URLSessionConfiguration.default
 		// Make sure no cached requests are loaded
 		config.requestCachePolicy = .reloadIgnoringLocalAndRemoteCacheData

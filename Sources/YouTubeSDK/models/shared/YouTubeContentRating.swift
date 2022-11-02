@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct YouTubeContentRating: Codable {
+public struct YouTubeContentRating: Codable {
 	var acbRating: String?
 	var agcomRating: String?
 	var anatelRating: String?

@@ -8,8 +8,8 @@
 import Foundation
 
 public struct YouTubeVideoCategoryResponse: Codable {
-	var kind: String?
-	var etag: String?
-	var items: [YouTubeVideoCategory]?
-	var error: YouTubeError?
+	public var kind: String?
+	public var etag: String?
+	public var items: [YouTubeVideoCategory]?
+	public var error: YouTubeError?
 }

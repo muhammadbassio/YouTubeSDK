@@ -8,11 +8,11 @@
 import Foundation
 
 public struct YouTubeRegionResponse: Codable {
-	var kind: String?
-	var etag: String?
-	var nextPageToken: String?
-	var prevPageToken: String?
-	var pageInfo: PageInfo?
-	var items: [YouTubeRegion]?
-	var error: YouTubeError?
+	public var kind: String?
+	public var etag: String?
+	public var nextPageToken: String?
+	public var prevPageToken: String?
+	public var pageInfo: PageInfo?
+	public var items: [YouTubeRegion]?
+	public var error: YouTubeError?
 }

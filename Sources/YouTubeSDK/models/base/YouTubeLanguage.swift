@@ -8,11 +8,11 @@
 import Foundation
 
 public struct YouTubeLanguage: Codable {
-	var id: String?
-	var snippet: YouTubeLanguageSnippet?
+	public var id: String?
+	public var snippet: YouTubeLanguageSnippet?
 }
 
 public struct YouTubeLanguageSnippet: Codable {
-	var hl: String?
-	var name: String?
+	public var hl: String?
+	public var name: String?
 }

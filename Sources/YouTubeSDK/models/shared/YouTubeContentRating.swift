@@ -8,73 +8,73 @@
 import Foundation
 
 public struct YouTubeContentRating: Codable {
-	var acbRating: String?
-	var agcomRating: String?
-	var anatelRating: String?
-	var bbfcRating: String?
-	var bfvcRating: String?
-	var bmukkRating: String?
-	var catvRating: String?
-	var catvfrRating: String?
-	var cbfcRating: String?
-	var cccRating: String?
-	var cceRating: String?
-	var chfilmRating: String?
-	var chvrsRating: String?
-	var cicfRating: String?
-	var cnaRating: String?
-	var cncRating: String?
-	var csaRating: String?
-	var cscfRating: String?
-	var czfilmRating: String?
-	var djctqRating: String?
-	var djctqRatingReasons: [String]?
-	var ecbmctRating: String?
-	var eefilmRating: String?
-	var egfilmRating: String?
-	var eirinRating: String?
-	var fcbmRating: String?
-	var fcoRating: String?
-	var fmocRating: String?
-	var fpbRating: String?
-	var fpbRatingReasons: [String]?
-	var fskRating: String?
-	var grfilmRating: String?
-	var icaaRating: String?
-	var ifcoRating: String?
-	var ilfilmRating: String?
-	var incaaRating: String?
-	var kfcbRating: String?
-	var kijkwijzerRating: String?
-	var kmrbRating: String?
-	var lsfRating: String?
-	var mccaaRating: String?
-	var mccypRating: String?
-	var mcstRating: String?
-	var mdaRating: String?
-	var medietilsynetRating: String?
-	var mekuRating: String?
-	var mibacRating: String?
-	var mocRating: String?
-	var moctwRating: String?
-	var mpaaRating: String?
-	var mpaatRating: String?
-	var mtrcbRating: String?
-	var nbcRating: String?
-	var nbcplRating: String?
-	var nfrcRating: String?
-	var nfvcbRating: String?
-	var nkclvRating: String?
-	var oflcRating: String?
-	var pefilmRating: String?
-	var rcnofRating: String?
-	var resorteviolenciaRating: String?
-	var rtcRating: String?
-	var rteRating: String?
-	var russiaRating: String?
-	var skfilmRating: String?
-	var smaisRating: String?
-	var smsaRating: String?
-	var tvpgRating: String?
-	var ytRating: String?
+	public var acbRating: String?
+	public var agcomRating: String?
+	public var anatelRating: String?
+	public var bbfcRating: String?
+	public var bfvcRating: String?
+	public var bmukkRating: String?
+	public var catvRating: String?
+	public var catvfrRating: String?
+	public var cbfcRating: String?
+	public var cccRating: String?
+	public var cceRating: String?
+	public var chfilmRating: String?
+	public var chvrsRating: String?
+	public var cicfRating: String?
+	public var cnaRating: String?
+	public var cncRating: String?
+	public var csaRating: String?
+	public var cscfRating: String?
+	public var czfilmRating: String?
+	public var djctqRating: String?
+	public var djctqRatingReasons: [String]?
+	public var ecbmctRating: String?
+	public var eefilmRating: String?
+	public var egfilmRating: String?
+	public var eirinRating: String?
+	public var fcbmRating: String?
+	public var fcoRating: String?
+	public var fmocRating: String?
+	public var fpbRating: String?
+	public var fpbRatingReasons: [String]?
+	public var fskRating: String?
+	public var grfilmRating: String?
+	public var icaaRating: String?
+	public var ifcoRating: String?
+	public var ilfilmRating: String?
+	public var incaaRating: String?
+	public var kfcbRating: String?
+	public var kijkwijzerRating: String?
+	public var kmrbRating: String?
+	public var lsfRating: String?
+	public var mccaaRating: String?
+	public var mccypRating: String?
+	public var mcstRating: String?
+	public var mdaRating: String?
+	public var medietilsynetRating: String?
+	public var mekuRating: String?
+	public var mibacRating: String?
+	public var mocRating: String?
+	public var moctwRating: String?
+	public var mpaaRating: String?
+	public var mpaatRating: String?
+	public var mtrcbRating: String?
+	public var nbcRating: String?
+	public var nbcplRating: String?
+	public var nfrcRating: String?
+	public var nfvcbRating: String?
+	public var nkclvRating: String?
+	public var oflcRating: String?
+	public var pefilmRating: String?
+	public var rcnofRating: String?
+	public var resorteviolenciaRating: String?
+	public var rtcRating: String?
+	public var rteRating: String?
+	public var russiaRating: String?
+	public var skfilmRating: String?
+	public var smaisRating: String?
+	public var smsaRating: String?
+	public var tvpgRating: String?
+	public var ytRating: String?
 }

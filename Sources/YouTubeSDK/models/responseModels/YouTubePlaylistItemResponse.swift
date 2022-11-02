@@ -8,11 +8,11 @@
 import Foundation
 
 public struct YouTubePlaylistItemResponse: Codable {
-	var kind: String?
-	var etag: String?
-	var nextPageToken: String?
-	var prevPageToken: String?
-	var pageInfo: PageInfo?
-	var items: [YouTubePlaylistItem]?
-	var error: YouTubeError?
+	public var kind: String?
+	public var etag: String?
+	public var nextPageToken: String?
+	public var prevPageToken: String?
+	public var pageInfo: PageInfo?
+	public var items: [YouTubePlaylistItem]?
+	public var error: YouTubeError?
 }

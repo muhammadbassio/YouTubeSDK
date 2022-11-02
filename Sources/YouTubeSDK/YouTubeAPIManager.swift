@@ -11,9 +11,9 @@ import Fly
 open class YouTubeAPIManager: APIManager {
 	public static let shared: YouTubeAPIManager = YouTubeAPIManager(id: "", key: "")
 	
-	var maxResults: Int = 20
-	private(set) var bundleId = ""
-	private(set) var apiKey = ""
+	public var maxResults: Int = 20
+	private(set) public var bundleId = ""
+	private(set) public var apiKey = ""
 	
 	public init(id: String, key: String, manager: NetworkManager = createNetworkManager()) {
 		bundleId = id

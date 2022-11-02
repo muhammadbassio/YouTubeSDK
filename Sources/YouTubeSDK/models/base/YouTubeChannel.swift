@@ -8,6 +8,6 @@
 import Foundation
 
 public struct YouTubeChannel: Codable {
-	var id: String?
-	var snippet: YouTubeSnippet?
+	public var id: String?
+	public var snippet: YouTubeSnippet?
 }

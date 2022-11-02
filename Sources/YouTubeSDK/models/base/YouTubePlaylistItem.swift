@@ -8,15 +8,15 @@
 import Foundation
 
 public struct YouTubePlaylistItem: Codable {
-	var id: String?
-	var snippet: YouTubeSnippet?
-	var contentDetails: YouTubePlaylistItemContentDetails?
+	public var id: String?
+	public var snippet: YouTubeSnippet?
+	public var contentDetails: YouTubePlaylistItemContentDetails?
 }
 
 public struct YouTubePlaylistItemContentDetails: Codable {
-	var videoId: String?
-	var startAt: String?
-	var endAt: String?
-	var note: String?
-	var videoPublishedAt: String?
+	public var videoId: String?
+	public var startAt: String?
+	public var endAt: String?
+	public var note: String?
+	public var videoPublishedAt: String?
 }

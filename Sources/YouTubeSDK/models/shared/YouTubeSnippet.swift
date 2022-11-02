@@ -8,23 +8,23 @@
 import Foundation
 
 public struct YouTubeSnippet: Codable {
-	var publishedAt: String?
-	var channelId: String?
-	var title: String?
-	var description: String?
-	var thumbnails: YouTubeItemThumbnails?
-	var channelTitle: String?
-	var tags: [String]?
-	var categoryId: String?
-	var liveBroadcastContent: String?
-	var defaultLanguage: String?
-	var localized: YouTubeLocalization?
-	var defaultAudioLanguage: String?
+	public var publishedAt: String?
+	public var channelId: String?
+	public var title: String?
+	public var description: String?
+	public var thumbnails: YouTubeItemThumbnails?
+	public var channelTitle: String?
+	public var tags: [String]?
+	public var categoryId: String?
+	public var liveBroadcastContent: String?
+	public var defaultLanguage: String?
+	public var localized: YouTubeLocalization?
+	public var defaultAudioLanguage: String?
 	// PlaylistItem
-	var playlistId: String?
-	var position: UInt?
-	var resourceId: YouTubeResourceId?
+	public var playlistId: String?
+	public var position: UInt?
+	public var resourceId: YouTubeResourceId?
 	// Channel
-	var customUrl: String?
-	var country: String?
+	public var customUrl: String?
+	public var country: String?
 }

@@ -8,19 +8,19 @@
 import Foundation
 
 public struct YouTubeVideoContentDetails: Codable {
-	var duration: String?
-	var dimension: String?
-	var definition: String?
-	var caption: String?
-	var licensedContent: Bool?
-	var regionRestriction: YouTubeRegionRestriction?
-	var contentRating: YouTubeContentRating?
-	var projection: String?
-	var hasCustomThumbnail: Bool?
+	public var duration: String?
+	public var dimension: String?
+	public var definition: String?
+	public var caption: String?
+	public var licensedContent: Bool?
+	public var regionRestriction: YouTubeRegionRestriction?
+	public var contentRating: YouTubeContentRating?
+	public var projection: String?
+	public var hasCustomThumbnail: Bool?
 }
 
 public struct YouTubeVideo: Codable {
-	var id: String?
-	var snippet: YouTubeSnippet?
-	var contentDetails: YouTubeVideoContentDetails?
+	public var id: String?
+	public var snippet: YouTubeSnippet?
+	public var contentDetails: YouTubeVideoContentDetails?
 }

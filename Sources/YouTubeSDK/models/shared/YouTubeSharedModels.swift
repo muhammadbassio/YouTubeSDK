@@ -8,36 +8,36 @@
 import Foundation
 
 public struct PageInfo: Codable {
-	var totalResults: Int?
-	var resultsPerPage: Int?
+	public var totalResults: Int?
+	public var resultsPerPage: Int?
 }
 
 public struct YouTubeRegionRestriction: Codable {
-	var allowed: [String]?
-	var blocked: [String]?
+	public var allowed: [String]?
+	public var blocked: [String]?
 }
 
 public struct YouTubeLocalization: Codable {
-	var title: String?
-	var description: String?
+	public var title: String?
+	public var description: String?
 }
 
 public struct YouTubeItemThumbnails: Codable {
-	var `default`: YouTubeItemThumbnail?
-	var medium: YouTubeItemThumbnail?
-	var high: YouTubeItemThumbnail?
-	var standard: YouTubeItemThumbnail?
-	var maxres: YouTubeItemThumbnail?
+	public var `default`: YouTubeItemThumbnail?
+	public var medium: YouTubeItemThumbnail?
+	public var high: YouTubeItemThumbnail?
+	public var standard: YouTubeItemThumbnail?
+	public var maxres: YouTubeItemThumbnail?
 }
 
 public struct YouTubeItemThumbnail: Codable {
-	var url: String?
-	var width: UInt?
-	var height: UInt?
+	public var url: String?
+	public var width: UInt?
+	public var height: UInt?
 }
 
 public struct YouTubeResourceId: Codable {
-	var videoId: String?
-	var channelId: String?
-	var playlistId: String?
+	public var videoId: String?
+	public var channelId: String?
+	public var playlistId: String?
 }

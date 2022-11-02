@@ -8,11 +8,11 @@
 import Foundation
 
 public struct YouTubeRegion: Codable {
-	var id: String?
-	var snippet: YouTubeSnippet?
+	public var id: String?
+	public var snippet: YouTubeSnippet?
 }
 
 public struct YouTubeRegionSnippet: Codable {
-	var gl: String?
-	var name: String?
+	public var gl: String?
+	public var name: String?
 }

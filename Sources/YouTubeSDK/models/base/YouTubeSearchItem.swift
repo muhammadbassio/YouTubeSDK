@@ -8,12 +8,12 @@
 import Foundation
 
 public struct YouTubeSearchItem: Codable {
-  var id: YouTubeResourceId?
-	var snippet: YouTubeSearchItemSnippet?
+	public var id: YouTubeResourceId?
+	public var snippet: YouTubeSearchItemSnippet?
 }
 
 public struct YouTubeSearchItemSnippet: Codable {
-	var channelId: String?
-	var title: String?
-	var thumbnails: YouTubeItemThumbnails?
+	public var channelId: String?
+	public var title: String?
+	public var thumbnails: YouTubeItemThumbnails?
 }

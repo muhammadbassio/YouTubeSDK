@@ -15,19 +15,19 @@ extension YouTubeAPIManager {
 		queryParameters["id"] = ids
 		queryParameters["maxResults"] = maxResults
 		queryParameters["part"] = part
-		return APIEndPoint(path: "channels", queryParameters: queryParameters, headers: ["X-Ios-Bundle-Identifier": bundleId])
+		return APIEndPoint(path: "channels", queryParameters: queryParameters, headers: restrictionHeaders)
 	}
 	
 	public func languagesEndpoint() -> APIEndPoint {
 		var queryParameters: [String: Any] = ["key": self.apiKey]
 		queryParameters["part"] = "snippet"
-		return APIEndPoint(path: "i18nLanguages", queryParameters: queryParameters, headers: ["X-Ios-Bundle-Identifier": bundleId])
+		return APIEndPoint(path: "i18nLanguages", queryParameters: queryParameters, headers: restrictionHeaders)
 	}
 	
 	public func regionsEndpoint() -> APIEndPoint {
 		var queryParameters: [String: Any] = ["key": self.apiKey]
 		queryParameters["part"] = "snippet"
-		return APIEndPoint(path: "i18nRegions", queryParameters: queryParameters, headers: ["X-Ios-Bundle-Identifier": bundleId])
+		return APIEndPoint(path: "i18nRegions", queryParameters: queryParameters, headers: restrictionHeaders)
 	}
 	
 	public func playlistItemsEndpoint(_ playlistId: String, part: String) -> APIEndPoint {
@@ -35,7 +35,7 @@ extension YouTubeAPIManager {
 		queryParameters["playlistId"] = playlistId
 		queryParameters["maxResults"] = maxResults
 		queryParameters["part"] = part
-		return APIEndPoint(path: "playlistItems", queryParameters: queryParameters, headers: ["X-Ios-Bundle-Identifier": bundleId])
+		return APIEndPoint(path: "playlistItems", queryParameters: queryParameters, headers: restrictionHeaders)
 	}
 	
 	public func playlistsEndpoint(_ ids: String, part: String) -> APIEndPoint {
@@ -43,7 +43,7 @@ extension YouTubeAPIManager {
 		queryParameters["id"] = ids
 		queryParameters["maxResults"] = maxResults
 		queryParameters["part"] = part
-		return APIEndPoint(path: "playlists", queryParameters: queryParameters, headers: ["X-Ios-Bundle-Identifier": bundleId])
+		return APIEndPoint(path: "playlists", queryParameters: queryParameters, headers: restrictionHeaders)
 	}
 	
 	public func searchEndpoint(_ text: String, type: String, part: String) -> APIEndPoint {
@@ -52,7 +52,7 @@ extension YouTubeAPIManager {
 		queryParameters["type"] = type
 		queryParameters["maxResults"] = maxResults
 		queryParameters["part"] = part
-		return APIEndPoint(path: "search", queryParameters: queryParameters, headers: ["X-Ios-Bundle-Identifier": bundleId])
+		return APIEndPoint(path: "search", queryParameters: queryParameters, headers: restrictionHeaders)
 	}
 	
 	public func videosEndpoint(_ ids: String, part: String) -> APIEndPoint {
@@ -60,7 +60,7 @@ extension YouTubeAPIManager {
 		queryParameters["id"] = ids
 		queryParameters["maxResults"] = maxResults
 		queryParameters["part"] = part
-		return APIEndPoint(path: "videos", queryParameters: queryParameters, headers: ["X-Ios-Bundle-Identifier": bundleId])
+		return APIEndPoint(path: "videos", queryParameters: queryParameters, headers: restrictionHeaders)
 	}
 	
 }

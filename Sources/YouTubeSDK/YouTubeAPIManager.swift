@@ -11,12 +11,19 @@ import Fly
 open class YouTubeAPIManager: APIManager {
 	
 	public var maxResults: Int = 20
-	private(set) public var bundleId = ""
-	private(set) public var apiKey = ""
+	private(set) public var bundleId: String?
+	private(set) public var apiKey: String
 	
-	public init(id: String, key: String, manager: NetworkManager = createNetworkManager()) {
-		bundleId = id
-		apiKey = key
+	public var restrictionHeaders: [String: String]? {
+		if let id = bundleId {
+			return ["X-Ios-Bundle-Identifier": id]
+		}
+		return nil
+	}
+	
+	public init(apiKey: String, bundleId: String? = nil, manager: NetworkManager = createNetworkManager()) {
+		self.bundleId = bundleId
+		self.apiKey = apiKey
 		super.init(manager: manager)
 	}
 	

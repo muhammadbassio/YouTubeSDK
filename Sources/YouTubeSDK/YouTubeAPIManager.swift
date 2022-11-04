@@ -8,23 +8,31 @@
 import Foundation
 import Fly
 
+public let googleAuthURL = "https://accounts.google.com/o/oauth2/auth"
+public let googleTokenURL = "https://oauth2.googleapis.com/token"
+public let youTubeAPIv3URL = "https://www.googleapis.com/youtube/v3/"
+
 open class YouTubeAPIManager: APIManager {
 	
-	public var maxResults: Int = 20
-	private(set) public var bundleId: String?
-	private(set) public var apiKey: String
+	public var maxResults: Int = 25
+	private(set) public var credentials: YouTubeCredentials
 	
 	public var restrictionHeaders: [String: String]? {
-		if let id = bundleId {
-			return ["X-Ios-Bundle-Identifier": id]
+		if let bundleId = credentials.apiKey.bundleId {
+			return ["X-Ios-Bundle-Identifier": bundleId]
 		}
 		return nil
 	}
 	
-	public init(apiKey: String, bundleId: String? = nil, manager: NetworkManager = createNetworkManager()) {
-		self.bundleId = bundleId
-		self.apiKey = apiKey
-		super.init(manager: manager)
+	public init(credenials: YouTubeCredentials, storage: KeyValueStorage?, manager: NetworkManager = createNetworkManager()) {
+		self.credentials = credenials
+		var authClient: OAuthClient?
+		if let clientId = self.credentials.clientId,
+			 let storage = storage {
+			let config = OAuthClientConfiguration(clientId: clientId.clientId, clientSecret: clientId.clientSecret, authURL: googleAuthURL, tokenURL: googleTokenURL, redirectURL: clientId.redirectURL, responseType: "code")
+			authClient = OAuthClient(config: config, storage: storage)
+		}
+		super.init(manager: manager, client: authClient)
 	}
 	
 	public class func createNetworkManager() -> NetworkManager {
@@ -35,7 +43,7 @@ open class YouTubeAPIManager: APIManager {
 	}
 	
 	open override func initConfiguration() {
-		baseURL = "https://www.googleapis.com/youtube/v3/"
+		baseURL = youTubeAPIv3URL
 	}
 	
 }

@@ -11,7 +11,7 @@ import Fly
 extension YouTubeAPIManager {
 	
 	public func channelsEndpoint(_ ids: String, part: String) -> APIEndPoint {
-		var queryParameters: [String: Any] = ["key": self.apiKey]
+		var queryParameters: [String: Any] = ["key": self.credentials.apiKey.apiKey]
 		queryParameters["id"] = ids
 		queryParameters["maxResults"] = maxResults
 		queryParameters["part"] = part
@@ -19,19 +19,19 @@ extension YouTubeAPIManager {
 	}
 	
 	public func languagesEndpoint() -> APIEndPoint {
-		var queryParameters: [String: Any] = ["key": self.apiKey]
+		var queryParameters: [String: Any] = ["key": self.credentials.apiKey.apiKey]
 		queryParameters["part"] = "snippet"
 		return APIEndPoint(path: "i18nLanguages", queryParameters: queryParameters, headers: restrictionHeaders)
 	}
 	
 	public func regionsEndpoint() -> APIEndPoint {
-		var queryParameters: [String: Any] = ["key": self.apiKey]
+		var queryParameters: [String: Any] = ["key": self.credentials.apiKey.apiKey]
 		queryParameters["part"] = "snippet"
 		return APIEndPoint(path: "i18nRegions", queryParameters: queryParameters, headers: restrictionHeaders)
 	}
 	
 	public func playlistItemsEndpoint(_ playlistId: String, part: String) -> APIEndPoint {
-		var queryParameters: [String: Any] = ["key": self.apiKey]
+		var queryParameters: [String: Any] = ["key": self.credentials.apiKey.apiKey]
 		queryParameters["playlistId"] = playlistId
 		queryParameters["maxResults"] = maxResults
 		queryParameters["part"] = part
@@ -39,7 +39,7 @@ extension YouTubeAPIManager {
 	}
 	
 	public func playlistsEndpoint(_ ids: String, part: String) -> APIEndPoint {
-		var queryParameters: [String: Any] = ["key": self.apiKey]
+		var queryParameters: [String: Any] = ["key": self.credentials.apiKey.apiKey]
 		queryParameters["id"] = ids
 		queryParameters["maxResults"] = maxResults
 		queryParameters["part"] = part
@@ -47,7 +47,7 @@ extension YouTubeAPIManager {
 	}
 	
 	public func searchEndpoint(_ text: String, type: String, part: String) -> APIEndPoint {
-		var queryParameters: [String: Any] = ["key": self.apiKey]
+		var queryParameters: [String: Any] = ["key": self.credentials.apiKey.apiKey]
 		queryParameters["q"] = text
 		queryParameters["type"] = type
 		queryParameters["maxResults"] = maxResults
@@ -56,7 +56,7 @@ extension YouTubeAPIManager {
 	}
 	
 	public func videosEndpoint(_ ids: String, part: String) -> APIEndPoint {
-		var queryParameters: [String: Any] = ["key": self.apiKey]
+		var queryParameters: [String: Any] = ["key": self.credentials.apiKey.apiKey]
 		queryParameters["id"] = ids
 		queryParameters["maxResults"] = maxResults
 		queryParameters["part"] = part

@@ -5,8 +5,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/muhammadbassio/Fly",
       "state" : {
-        "revision" : "78d1be6f06039a93b2d85655c81d6a6f0ff21e35",
-        "version" : "0.0.1"
+        "revision" : "f65288b2ba3ebe1c0a21b011398763129decd2fb",
+        "version" : "0.0.7"
       }
     }
   ],

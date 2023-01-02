@@ -11,6 +11,7 @@ import Fly
 public let googleAuthURL = "https://accounts.google.com/o/oauth2/auth"
 public let googleTokenURL = "https://oauth2.googleapis.com/token"
 public let youTubeAPIv3URL = "https://www.googleapis.com/youtube/v3/"
+public let youTubeAPIv3Scope = "https://www.googleapis.com/auth/youtube.readonly"
 
 open class YouTubeAPIManager: APIManager {
 	
@@ -29,7 +30,7 @@ open class YouTubeAPIManager: APIManager {
 		var authClient: OAuthClient?
 		if let clientId = self.credentials.clientId,
 			 let storage = storage {
-			let config = OAuthClientConfiguration(clientId: clientId.clientId, clientSecret: clientId.clientSecret, authURL: googleAuthURL, tokenURL: googleTokenURL, redirectURL: clientId.redirectURL, responseType: "code")
+			let config = OAuthClientConfiguration(clientId: clientId.clientId, clientSecret: clientId.clientSecret, scope: youTubeAPIv3Scope, authURL: googleAuthURL, tokenURL: googleTokenURL, redirectURL: clientId.redirectURL, responseType: "code")
 			authClient = OAuthClient(config: config, storage: storage)
 		}
 		super.init(manager: manager, client: authClient)
